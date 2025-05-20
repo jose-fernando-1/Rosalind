@@ -1,5 +1,5 @@
 with open("C:/Users/grendes/Downloads/rosalind_revc.txt") as file:
-    dna_strand = file.read().strip()
+    dna_strand = file.read().split()
 
 reversed_strand = dna_strand[::-1]
 complementary_strand = reversed_strand.translate(str.maketrans("ATCG", "TAGC"))
